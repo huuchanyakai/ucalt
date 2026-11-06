@@ -1,0 +1,82 @@
+:root {
+  --normal-color:#000000;
+  --svg-color:#000000;
+  --normal-text: #1a1a1a;
+  --normal-back-color: #f8f8f8;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --border-color: #f1eeee;
+  --hover-bg: #f0f0f0;
+  --accent-color: #0084ff;
+  --accent-weak: #ff6666;
+  --accent-dark: #cc0028;
+  --on-accent: #ffffff;
+  --danger: #c00;
+  --danger-weak: #f66;
+  --danger-text: #ffffff;
+  --success: #2a8a2a;
+  --ui-dark: #222;
+  --ui-darker: #333;
+  --ui-darker2: #444;
+  --text-type2-reload: #555555;
+  --text-secondary-hover: #999999;
+  --link-hover: #212121;
+  --link-color: #0008ff;
+  --video-meta-bg: rgba(0, 0, 0, 0.05);
+  --description-bg: rgba(0, 0, 0, 0.02);
+  --download-button: #d4d2d2;
+  --search-border: #f1eeee;
+}
+
+html.dark-mode {
+  --normal-color:#ffffff;
+  --svg-color:#ffffff;
+  --normal-text: #e8e8e8;
+  --normal-back-color: #1f1e1e;
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #282727;
+  --hover-bg: #333333;
+  --accent-color: #ff0033;
+  --accent-weak: #ff6666;
+  --accent-dark: #cc0028;
+  --on-accent: #ffffff;
+  --danger: #c00;
+  --danger-weak: #f66;
+  --danger-text: #ffffff;
+  --success: #2a8a2a;
+  --ui-dark: #222;
+  --ui-darker: #333;
+  --ui-darker2: #444;
+  --text-type2-reload: #444444;
+  --text-secondary-hover: #666666;
+  --link-hover: #ff0033;
+  --link-color: #ff0033;
+  --video-meta-bg: rgba(255, 255, 255, 0.05);
+  --description-bg: rgba(255, 255, 255, 0.02);
+  --download-button: #353535;
+  --search-border: #404040;
+}
+
+
+body {
+  font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+               "メイリオ", Meiryo,
+               "ＭＳ ゴシック", "MS Gothic",
+               sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.channel-icon-link, .channel-name[role="button"] {
+  cursor: pointer;
+}
+.channel-name[role="button"]:focus, .channel-icon-link:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
