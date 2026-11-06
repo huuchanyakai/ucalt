@@ -1,0 +1,28 @@
+{
+  "name": "siatube",
+  "version": "1.2.1",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=11.0.0"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "install:yt-dlp": "node install-yt-dlp.js",
+    "postinstall": "npm run install:yt-dlp && npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1",
+    "youtubei.js": "^14.0.0",
+    "ytpl": "github:Victiniiiii/ytpl",
+    "@distube/ytdl-core": "^4.16.12",
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/util": "^0.12.0",
+    "hls.js": "^1.5.1",
+    "cookie-parser": "^1.4.6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
